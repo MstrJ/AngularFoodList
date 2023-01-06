@@ -45,3 +45,5 @@ export class FoodComponent {
 
 // "builder": "@angular-devkit/build-angular:dev-server",
 // "builder": "docs",
+
+// ng build --output-path docs --base-href products
