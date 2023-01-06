@@ -1,8 +1,9 @@
 import { Food } from './food';
 
 export const listOfFoods: Food[] = [
-  { Name: 'Banana', Price: 12.99 },
-  { Name: 'Milk', Price: 5.99 },
-  { Name: 'Water', Price: 3.99 },
-  { Name: 'Pasta', Price: 7.99 },
+  { Name: 'Banana', Price: 2.99 },
+  { Name: 'Milk', Price: 1.99 },
+  { Name: 'Bottle of Water', Price: 0.99 },
+  { Name: 'Pasta', Price: 2.99 },
+  { Name: 'Pizza', Price: 3.99 },
 ];

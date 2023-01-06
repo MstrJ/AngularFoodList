@@ -1,17 +1,17 @@
-<div>
-  <ul id="produces">
-    <li *ngFor="let food of foods" (click)="Add(food)">
-      <b>{{ food.Name }}</b>
-      <p>${{ food.Price }}</p>
-    </li>
-  </ul>
-
-  <ul id="toBuy">
-    <li *ngFor="let item of listFood" (click)="Remove(item)">
+<div id="row">
+  <ul id="produces" class="column">
+    <h2>Products</h2>
+    <li *ngFor="let item of foods" (click)="Add(item)">
       <b>{{ item.Name }}</b>
       <p>${{ item.Price }}</p>
     </li>
   </ul>
 
-  <h2>Koszyk: {{ cena }} $</h2>
+  <ul id="toBuy" class="column">
+    <h2>Shopping cart: ${{ shoppingCart }}</h2>
+    <li *ngFor="let item of shoppingListUniqe" (click)="Remove(item)">
+      <b>{{ item.Name }} x{{ item.Count }}</b>
+      <p>${{ item.Price }}</p>
+    </li>
+  </ul>
 </div>
